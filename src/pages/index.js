@@ -7,7 +7,7 @@ const IndexPage = () => (
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <Link to="/page-2/">Go to page 2</Link>
-    <Link onClick={() => fetch("/src/hello").then(res => res.json()).then(data => console.log(data))}>Netlify</Link>
+    <Link onClick={() => fetch("/.netlify/functions/hello").then(res => res.json()).then(data => console.log(data))}>Netlify</Link>
   </div>
 )
 
